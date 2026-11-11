@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6b817">
+  <meta name="description" content="Conheça o Shopping do Real: variedade de produtos para facilitar o seu dia a dia.">
+  <title>Shopping do Real | Variedade que combina com você</title>
+  <style>
+    :root{--ink:#242321;--muted:#6d6a63;--paper:#fffdf8;--yellow:#f6b817;--yellow-soft:#fff3c9;--red:#c83b2e;--line:#eee7d8;--white:#fff}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.5}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+    .top{background:var(--ink);color:#fff;font-size:.82rem;padding:9px 0}.top .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+    header{background:rgba(255,253,248,.94);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5;backdrop-filter:blur(12px)}
+    .nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:11px;font-weight:900;letter-spacing:-.04em;font-size:1.2rem}.mark{width:42px;height:42px;background:var(--yellow);border-radius:13px;display:grid;place-items:center;font-weight:1000;font-size:1.35rem;transform:rotate(-5deg);box-shadow:4px 4px 0 var(--red)}.brand small{display:block;font-size:.62rem;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);font-weight:800;margin-top:-3px}
+    .links{display:flex;gap:27px;font-size:.92rem;font-weight:700}.links a:hover{color:var(--red)}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:999px;background:var(--red);color:white;padding:13px 20px;font-weight:800;transition:.2s}.nav-cta:hover,.btn:hover{background:#a92d23;transform:translateY(-2px)}
+    .hero{padding:76px 0 68px;overflow:hidden;background:radial-gradient(circle at 90% 15%,#ffe7a1 0,transparent 28%),linear-gradient(135deg,#fff9e9 0%,#fffdf8 60%)}.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:50px;align-items:center}.eyebrow{display:inline-flex;align-items:center;gap:8px;background:var(--yellow-soft);color:#7b5200;padding:8px 13px;border-radius:999px;font-size:.78rem;font-weight:900;letter-spacing:.06em;text-transform:uppercase}.eyebrow:before{content:"";width:7px;height:7px;border-radius:50%;background:var(--red)}
+    h1{font-size:clamp(2.7rem,6vw,5rem);line-height:.99;letter-spacing:-.065em;margin:20px 0}.hero h1 span{color:var(--red)}.lead{font-size:1.12rem;color:var(--muted);max-width:510px}.actions{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-top:28px}.text-link{font-weight:800;border-bottom:2px solid var(--yellow);padding:8px 0}.hero-note{font-size:.8rem;color:var(--muted);margin-top:23px}
+    .visual{position:relative;min-height:390px;display:grid;place-items:center}.sun{position:absolute;width:330px;height:330px;border-radius:50%;background:var(--yellow);right:7%;top:5%;opacity:.95}.stack{position:relative;width:min(390px,100%);height:330px}.tile{position:absolute;border:7px solid var(--paper);border-radius:28px;box-shadow:0 18px 40px #5c3d171c;display:grid;place-items:center;font-size:4.4rem}.tile.one{width:190px;height:205px;background:#f7d7b5;left:5px;top:35px;transform:rotate(-9deg)}.tile.two{width:190px;height:205px;background:#d9e6d0;right:0;top:12px;transform:rotate(8deg)}.tile.three{width:205px;height:170px;background:#f5cbd0;left:91px;bottom:0;transform:rotate(3deg)}.sticker{position:absolute;right:-5px;bottom:18px;background:var(--red);color:white;border-radius:50%;width:95px;height:95px;display:grid;place-items:center;text-align:center;font-weight:1000;font-size:.85rem;line-height:1.1;transform:rotate(10deg);border:5px solid var(--paper)}
+    section{padding:76px 0}.section-head{max-width:650px;margin-bottom:32px}.kicker{color:var(--red);font-size:.78rem;font-weight:900;letter-spacing:.13em;text-transform:uppercase}.section-head h2{font-size:clamp(2rem,4vw,3rem);letter-spacing:-.05em;line-height:1.05;margin:10px 0}.section-head p{color:var(--muted);margin:0}
+    .categories{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.category{background:white;border:1px solid var(--line);border-radius:20px;padding:23px;min-height:170px;transition:.2s}.category:hover{transform:translateY(-4px);box-shadow:0 14px 30px #33240d10}.emoji{width:48px;height:48px;border-radius:15px;background:var(--yellow-soft);display:grid;place-items:center;font-size:1.55rem;margin-bottom:17px}.category h3{margin:0 0 5px;font-size:1.08rem}.category p{margin:0;color:var(--muted);font-size:.9rem}
+    .about{background:#262522;color:white}.about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:55px;align-items:center}.about-card{background:var(--yellow);color:var(--ink);border-radius:26px;padding:30px;min-height:250px;display:flex;flex-direction:column;justify-content:space-between;transform:rotate(-2deg)}.about-card strong{font-size:2.5rem;line-height:1;letter-spacing:-.06em}.about-card span{font-weight:800}.about h2{font-size:clamp(2rem,4vw,3.2rem);letter-spacing:-.05em;line-height:1.05;margin:10px 0 18px}.about p{color:#d3d0c8}.about .kicker{color:var(--yellow)}
+    .visit{background:var(--yellow-soft)}.visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}.visit-card{background:white;border-radius:22px;padding:27px;border:1px solid #f1e3b9}.visit-card h3{margin:0 0 8px}.visit-card p{color:var(--muted);margin:0 0 18px}.visit-card .btn{background:var(--ink)}.visit-card .btn:hover{background:var(--red)}
+    footer{background:var(--ink);color:#fff;padding:28px 0;font-size:.85rem}footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}footer span{color:#c9c5bb}
+    @media(max-width:760px){.links{display:none}.nav{height:68px}.hero{padding:55px 0 35px}.hero-grid,.about-grid,.visit-grid{grid-template-columns:1fr}.hero-grid{gap:20px}.visual{min-height:320px}.sun{width:270px;height:270px}.stack{transform:scale(.88)}.categories{grid-template-columns:1fr 1fr}.about-grid{gap:30px}section{padding:58px 0}}
+    @media(max-width:460px){.wrap{width:min(100% - 30px,1120px)}.nav-cta{padding:11px 14px;font-size:.82rem}.categories{grid-template-columns:1fr}.category{min-height:0}.hero h1{font-size:3rem}.visual{min-height:280px}.stack{transform:scale(.76)}.top .wrap{font-size:.72rem}}
+  </style>
+</head>
+<body>
+  <div class="top"><div class="wrap"><span>Variedade para facilitar o seu dia</span><span>Osvaldo Cruz · SP</span></div></div>
+  <header><nav class="wrap nav" aria-label="Navegação principal">
+    <a class="brand" href="#inicio"><span class="mark">R</span><span>SHOPPING DO REAL<small>variedade & praticidade</small></span></a>
+    <div class="links"><a href="#categorias">Categorias</a><a href="#sobre">A loja</a><a href="#visite">Como chegar</a></div>
+    <a class="nav-cta" href="tel:+551835280877">Fale com a loja ↗</a>
+  </nav></header>
+  <main>
+    <section class="hero" id="inicio"><div class="wrap hero-grid">
+      <div><span class="eyebrow">Tem sempre algo pra descobrir</span><h1>Um mundo de coisas.<br><span>Um só lugar.</span></h1>
+        <p class="lead">De presentes a utilidades para casa, encontre variedade para o dia a dia no Shopping do Real.</p>
+        <div class="actions"><a class="btn" href="#categorias">Explore a variedade <span aria-hidden="true">&nbsp;↓</span></a><a class="text-link" href="#visite">Venha conhecer a loja</a></div>
+        <p class="hero-note">Uma loja cheia de possibilidades, pertinho de você.</p>
+      </div>
+      <div class="visual" aria-label="Ilustrações de categorias de produtos"><div class="sun"></div><div class="stack"><div class="tile one">🧸</div><div class="tile two">🏠</div><div class="tile three">🎁</div><div class="sticker">BOM<br>DE<br>ENCONTRAR!</div></div></div>
+    </div></section>
+    <section id="categorias"><div class="wrap"><div class="section-head"><span class="kicker">Um pouco de tudo</span><h2>O que você está procurando hoje?</h2><p>Ideias, praticidade e aquele item que faltava. Confira algumas das variedades que você encontra por aqui.</p></div>
+      <div class="categories">
+        <article class="category"><div class="emoji">🧸</div><h3>Brinquedos</h3><p>Opções para presentear e fazer a alegria da criançada.</p></article>
+        <article class="category"><div class="emoji">🍳</div><h3>Casa e cozinha</h3><p>Itens úteis para deixar a rotina mais prática.</p></article>
+        <article class="category"><div class="emoji">🎁</div><h3>Presentes</h3><p>Pequenos achados para surpreender em qualquer ocasião.</p></article>
+        <article class="category"><div class="emoji">🛠️</div><h3>Ferramentas</h3><p>Acessórios e utilidades para resolver tarefas do dia a dia.</p></article>
+        <article class="category"><div class="emoji">🍬</div><h3>Guloseimas</h3><p>Uma pausa gostosa para deixar o dia mais leve.</p></article>
+        <article class="category"><div class="emoji">🛍️</div><h3>Muito mais</h3><p>Venha descobrir outras novidades e variedades na loja.</p></article>
+      </div>
+    </div></section>
+    <section class="about" id="sobre"><div class="wrap about-grid"><div class="about-card"><strong>Seu dia a dia<br>fica mais fácil.</strong><span>SHOPPING DO REAL · OSVALDO CRUZ</span></div><div><span class="kicker">Sobre a loja</span><h2>Variedade boa é aquela que surpreende.</h2><p>No Shopping do Real, a ideia é reunir diferentes tipos de produtos em um só lugar. Passe para conhecer as opções, encontrar o que precisa e descobrir novidades pelo caminho.</p><a class="text-link" href="#visite" style="color:#fff;border-color:var(--yellow)">Encontre a loja ↓</a></div></div></section>
+    <section class="visit" id="visite"><div class="wrap"><div class="section-head"><span class="kicker">Estamos por aqui</span><h2>Faça uma visita!</h2><p>Venha conhecer de perto a variedade do Shopping do Real.</p></div><div class="visit-grid">
+      <div class="visit-card"><h3>📍 Onde estamos</h3><p>Rua Armando Sales, 910<br>Osvaldo Cruz – SP</p><a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Shopping+do+Real+Osvaldo+Cruz+SP">Abrir no mapa ↗</a></div>
+      <div class="visit-card"><h3>☎️ Entre em contato</h3><p>Fale diretamente com a loja pelo telefone.</p><a class="btn" href="tel:+551835280877">(18) 3528-0877</a></div>
+    </div></div></section>
+  </main>
+  <footer><div class="wrap"><strong>SHOPPING DO REAL</strong><span>Uma vitrine digital demonstrativa · Osvaldo Cruz, SP</span></div></footer>
+</body>
+</html>
